@@ -11,18 +11,35 @@ function criaCores (array) {
 }
 let listaDeCores = ["black","red", "green", "yellow"]
 criaCores(listaDeCores);
-// requisito 4, 5, 6, 7 e 8
-let pixelBoard = document.getElementById("pixel-board");
-let comprimento = 5;
-let altura = 5;
+// requisito 4 e 5.
+function adicionaPixelBoard (compri, alt){
 
-for (let al = 0; al < altura ; al += 1) {
-    let linha = document.createElement("div");
-    linha.id = "linha"
-    for (let cp = 0; cp < comprimento ; cp += 1) {
-        let pixel = document.createElement("div");
-        pixel.classList.add("pixel");
-        linha.appendChild(pixel);
+    let pixelBoard = document.getElementById("pixel-board");
+    let comprimento = compri;
+    let altura = alt;
+    
+    for (let al = 0; al < altura ; al += 1) {
+        let linha = document.createElement("div");
+        linha.id = "linha"
+        for (let cp = 0; cp < comprimento ; cp += 1) {
+            let pixel = document.createElement("div");
+            pixel.classList.add("pixel");
+            linha.appendChild(pixel);
+        }
+        pixelBoard.appendChild(linha);
     }
-    pixelBoard.appendChild(linha);
 }
+adicionaPixelBoard(5,5);
+
+// requisito 6
+function selectInicial(){
+    let colorPalette = document.getElementById("color-palette").children;
+    for (divCor of colorPalette) {
+        if (divCor.id === "black") {
+            divCor.classList.add("selected");
+        } 
+    }    
+}
+
+selectInicial();
+

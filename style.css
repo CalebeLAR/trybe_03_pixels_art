@@ -32,9 +32,11 @@
 }
 #linha {
     display: block;
-    width: 200px;
     height: 40px;
     box-sizing: border-box;
 
+}
+
+.selected {
 }
 
