@@ -40,6 +40,22 @@ function selectInicial(){
         } 
     }    
 }
-
 selectInicial();
+// requisito 7 
+function tornaClicável(){
+    function ventoClick(event){
+        let divClicada = event.target;
+        let div_com_classe_selected = document.querySelector('.selected');
+        div_com_classe_selected.classList.remove('selected');
+        divClicada.classList.add('selected')     
+    }
+
+    let colorPalette = document.getElementById("color-palette").children;
+    for (divCor of colorPalette) {
+        divCor.addEventListener('click', ventoClick);
+
+    }
+}
+tornaClicável()
+//
 
