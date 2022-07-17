@@ -30,7 +30,6 @@ function adicionaPixelBoard (compri, alt){
     }
 }
 adicionaPixelBoard(5,5);
-
 // requisito 6
 function selectInicial(){
     let colorPalette = document.getElementById("color-palette").children;
@@ -41,21 +40,34 @@ function selectInicial(){
     }    
 }
 selectInicial();
-// requisito 7 
-function tornaClicável(){
-    function ventoClick(event){
+// requisito 7
+function ativaPainelDeCores(){
+    function painelClik(event){
         let divClicada = event.target;
         let div_com_classe_selected = document.querySelector('.selected');
         div_com_classe_selected.classList.remove('selected');
-        divClicada.classList.add('selected')     
+        divClicada.classList.add('selected')
     }
-
+    
     let colorPalette = document.getElementById("color-palette").children;
     for (divCor of colorPalette) {
-        divCor.addEventListener('click', ventoClick);
-
+        divCor.addEventListener('click', painelClik);
+        
     }
 }
-tornaClicável()
-//
-
+ativaPainelDeCores();
+// requisito 8
+function ativaPainelDePixel(){
+    function pixelClick(event) {
+        let div_com_classe_selected = document.querySelector('.selected');
+        let pixelClicado = event.target
+        pixelClicado.style.backgroundColor = div_com_classe_selected.style.backgroundColor
+    }
+    let pixelBoard = document.getElementById("pixel-board").children;
+    for (linha of pixelBoard) {
+        for (pixel of linha.children) {
+            pixel.addEventListener("click", pixelClick)
+        }
+    }
+}
+ativaPainelDePixel();
