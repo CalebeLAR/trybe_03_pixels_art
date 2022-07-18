@@ -56,7 +56,7 @@ function ativaPainelDeCores(){
     }
 }
 ativaPainelDeCores();
-// requisito 8
+// requisito 9
 function ativaPainelDePixel(){
     function pixelClick(event) {
         let div_com_classe_selected = document.querySelector('.selected');
@@ -71,3 +71,29 @@ function ativaPainelDePixel(){
     }
 }
 ativaPainelDePixel();
+
+// requisito 9
+function criaBotão () {
+    let pixelBoard = document.getElementById("pixel-board").previousElementSibling
+    let botão = document.createElement('button');
+    botão.innerText =  "Limpar"
+    botão.id = "clear-board"
+    pixelBoard.append(botão)
+}
+criaBotão();
+
+function ativaBotão (){
+    function clearBord (){
+        let pixelBoard = document.getElementById("pixel-board").children;
+        for (linha of pixelBoard){   
+            for (pixel of linha.children){
+                pixel.style.backgroundColor = "white"
+            }
+        }
+    }
+    let botão = document.getElementById("clear-board")
+    botão.addEventListener('click', clearBord);
+}
+ativaBotão();
+//requisito 10
+
