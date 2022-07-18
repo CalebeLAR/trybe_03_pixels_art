@@ -110,6 +110,14 @@ function configuraQuadro() {
         if ( N === "" || N <= 0) {
             alert("Board inválido!");
         } else {
+
+            if (N < 5) {
+                N = 5
+            }
+            if (N > 50) {
+                N = 50
+            }
+            
             let pixelBoard = document.getElementById("pixel-board");
             pixelBoard.remove();
             let section = document.createElement("section");
