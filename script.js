@@ -1,17 +1,16 @@
-//requisitos 1, 2 e 3.
-function criaCores (array) {
+//requisitos 1, 2 e 3 ------------------------------------------------------------------------------
+function criaCores (arrayDeCores) {
     let colorPalette = document.getElementById("color-palette");
-    for (cor of listaDeCores ){
+    for (cor of arrayDeCores ){
         let div = document.createElement("div");
-        div.classList.add("color");  //class = "color"
-        div.id = cor;//class = "color cor"
+        div.classList.add("color"); 
+        div.id = cor;
         div.style.backgroundColor = cor
         colorPalette.appendChild(div)
     }
 }
-let listaDeCores = ["black","red", "green", "yellow"]
-criaCores(listaDeCores);
-// requisito 4 e 5.
+
+// requisito 4 e 5 ------------------------------------------------------------------------------
 function adicionaPixelBoard (compri, alt){
 
     let pixelBoard = document.getElementById("pixel-board");
@@ -29,8 +28,8 @@ function adicionaPixelBoard (compri, alt){
         pixelBoard.appendChild(linha);
     }
 }
-adicionaPixelBoard(5,5);
-// requisito 6
+
+// requisito 6------------------------------------------------------------------------------
 function selectInicial(){
     let colorPalette = document.getElementById("color-palette").children;
     for (divCor of colorPalette) {
@@ -39,8 +38,8 @@ function selectInicial(){
         } 
     }    
 }
-selectInicial();
-// requisito 7
+
+// requisito 7 ------------------------------------------------------------------------------
 function ativaPainelDeCores(){
     function painelClik(event){
         let divClicada = event.target;
@@ -55,8 +54,9 @@ function ativaPainelDeCores(){
         
     }
 }
-ativaPainelDeCores();
-// requisito 9
+
+
+// requisito 8------------------------------------------------------------------------------
 function ativaPainelDePixel(){
     function pixelClick(event) {
         let div_com_classe_selected = document.querySelector('.selected');
@@ -70,30 +70,61 @@ function ativaPainelDePixel(){
         }
     }
 }
-ativaPainelDePixel();
 
-// requisito 9
+// requisito 9 ------------------------------------------------------------------------------
 function criaBotão () {
-    let pixelBoard = document.getElementById("pixel-board").previousElementSibling
+    let divInputs = document.getElementById("color-palette")
     let botão = document.createElement('button');
-    botão.innerText =  "Limpar"
+    botão.innerText = "Limpar"
     botão.id = "clear-board"
-    pixelBoard.append(botão)
+    
+    divInputs.parentElement.append(botão)
 }
-criaBotão();
-
 function ativaBotão (){
     function clearBord (){
         let pixelBoard = document.getElementById("pixel-board").children;
         for (linha of pixelBoard){   
             for (pixel of linha.children){
-                pixel.style.backgroundColor = "white"
+                pixel.style.backgroundColor = "white";
             }
         }
     }
+    
     let botão = document.getElementById("clear-board")
     botão.addEventListener('click', clearBord);
 }
+let listaDeCores = ["black", "red", "green", "yellow"];
+criaCores(listaDeCores);
+adicionaPixelBoard(5, 5);
+selectInicial();
+ativaPainelDeCores();
+ativaPainelDePixel();
+criaBotão();
 ativaBotão();
-//requisito 10
+configuraQuadro();
+//requisito10
+function configuraQuadro() {
+    function verificarValor (event){
+        event.preventDefault();
+        let N = document.getElementById("board-size").value;
+        if ( N === "" || N <= 0) {
+            alert("Board inválido!");
+        } else {
+            let pixelBoard = document.getElementById("pixel-board");
+            pixelBoard.remove();
+            let section = document.createElement("section");
+            section.id = "pixel-board";
+            let main = document.querySelector("main");
+            main.appendChild(section);
+
+            adicionaPixelBoard(N,N);
+            selectInicial();
+            ativaPainelDeCores();
+            ativaPainelDePixel();
+        }
+
+    }
+    let botãoVQV = document.getElementById("generate-board")
+    botãoVQV.addEventListener("click", verificarValor)
+}
 

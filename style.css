@@ -36,9 +36,23 @@
 }
 
 .selected {
+    border-radius: 40px;
+}
+#clear-board {
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 8px;
+    display: block;
+}
+.inputs{
+    display: block;
+    text-align: center;
+    background-color: aquamarine;
+    margin-bottom: 7px;
 }
 
-#clear-board {
-    display: block;
-    margin: auto;
+
+#generate-board {
+
 }
