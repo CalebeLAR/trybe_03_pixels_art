@@ -40,7 +40,7 @@ Este repositório contém implementaração de um editor de arte com pixels do p
 
 #### Clone o repositório e abra o arquivo `index.html` no o navegador. 😃
 ```bash
-git clone git@github.com:tryber/sd-024-a-project-playground-functions.git
+git clone git@github.com:CalebeLAR/trybe_03_pixels_art.git
 ```
 
 #### 🤝 Contribuição
