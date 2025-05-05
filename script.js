@@ -1,10 +1,3 @@
-/* eslint-disable camelcase */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-undef */
-/* eslint-disable no-use-before-define */
-/* eslint-disable max-lines-per-function */
-/* eslint-disable sonarjs/cognitive-complexity */
-
 // requisitos 1, 2 e 3 ------------------------------------------------------------------------------
 function criaCores(arrayDeCores) {
   const colorPalette = document.getElementById('color-palette');
