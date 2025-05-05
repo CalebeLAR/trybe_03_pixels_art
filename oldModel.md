@@ -1,4 +1,4 @@
-# Projeto Playground Functions 🚀
+# Projeto Pixels Art 🚀
 
 Este repositório contém implementaração de um editor de arte com pixels do projeto **Pixels Art** da Trybe, onde o usuário encontra uma paleta de cores e um quadro composto por pixels, que o permite dimensionar e pintar o que quiser no quadro!.
 
