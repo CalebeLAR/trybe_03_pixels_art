@@ -18,7 +18,7 @@ Este repositório contém implementaração de um editor de arte com pixels do p
 <img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - Adicionar à página uma paleta contendo quatro cores distintas.  
 <img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - Adicionar a cor preta como a primeira cor da paleta de cores.  
 <img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - Adicionar à página um quadro contendo 25 pixels.  
-<img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - Fazer com que cada pixel do quadro tenha largura e altura de 40 pixels e borda preta de 1 pixel de espessura.  
+<img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - Fazer com que cada pixel do quadro tenha largura e altura de 40 pixels e uma borda.  
 <img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - Definir a cor preta como cor inicial da paleta de cores  
 <img alt="icon-js" src="./js-free-icon.webp" width="20"/> - Criar uma função para selecionar uma cor na paleta de cores e preencha os pixels no quadro.  
 <img alt="icon-js" src="./js-free-icon.webp" width="20"/> - Criar uma função que permita preencher um pixel do quadro com a cor selecionada na paleta de cores.  
