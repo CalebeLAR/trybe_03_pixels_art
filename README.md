@@ -13,7 +13,7 @@ Este repositório contém implementaração de um editor de arte com pixels do p
 
 ## ✅ Funções Implementadas
 
-### Requisitos Obrigatórios
+### Requisitos do Projeto
 <img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - A página possui o título "Paleta de Cores".  
 <img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - A página possui uma paleta contendo quatro cores distintas.  
 <img alt="icon-htmlcss" src="./pngwing.com.png" width="30"/> - A página tem a cor preta como a primeira cor da paleta de cores.  
