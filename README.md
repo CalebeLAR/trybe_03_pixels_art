@@ -30,9 +30,9 @@ Este repositório contém implementaração de um editor de arte com pixels do p
 ## 📁 Estrutura do Projeto
 
     pixels-art/
-    ├── index.html          # implementações dos requisitos 1-13
-    ├── script.js           # implementações dos requisitos 1-13
-    ├── style.css           # implementações dos requisitos 1-13
+    ├── index.html          # implementações dos requisitos 1-12
+    ├── script.js           # implementações dos requisitos 1-12
+    ├── style.css           # implementações dos requisitos 1-12
     ├── .gitignore          # arquivo ignore do git
     └── README.md
 
