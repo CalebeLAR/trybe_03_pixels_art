@@ -23,7 +23,7 @@ Este repositório contém implementaração de um editor de arte com pixels do p
 <img alt="icon-js" src="./js-free-icon.webp" width="20"/> - O usuário pode selecionar uma cor na paleta de cores para preencher os pixels no quadro.  
 <img alt="icon-js" src="./js-free-icon.webp" width="20"/> - O usuário pode preencher um pixel do quadro com a cor selecionada na paleta de cores.  
 <img alt="icon-js" src="./js-free-icon.webp" width="20"/> - A página possui um botão que retorne a cor do quadro para a cor inicial.  
-<img alt="icon-js" src="./js-free-icon.webp" width="20"/> - A página possui um input que permita à pessoa usuária preencher um novo tamanho para o quadro de pixels.  
+<img alt="icon-js" src="./js-free-icon.webp" width="20"/> - A página possui um input que permita à pessoa usuária redefinir o tamanho do quadro de pixels.  
 <img alt="icon-js" src="./js-free-icon.webp" width="20"/> - A página limita o tamanho mínimo e máximo do quadro de pixels.  
 <!-- <img alt="icon-js" src="./js-free-icon.webp" width="20"/> - A página gera cores aleatoriamente, com exceção da cor preta, ao ser carregada.   -->
 
